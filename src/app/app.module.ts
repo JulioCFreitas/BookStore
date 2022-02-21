@@ -14,9 +14,11 @@ import { MatIconModule } from "@angular/material/icon";
 import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
+import { CategoriaHeadComponent } from './components/views/categoria/categoria-head/categoria-head.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CategoriaHeadComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -25,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatListModule,
     MatIconModule,
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriaHeadComponent } from './components/views/categoria/categoria-head/categoria-head.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CategoriaHeadComponent],
@@ -30,7 +31,8 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     AppRoutingModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

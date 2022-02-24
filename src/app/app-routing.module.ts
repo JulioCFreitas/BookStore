@@ -1,3 +1,4 @@
+import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
 import { LivroHeadAllComponent } from './components/views/livro/livro-head-all/livro-head-all.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/livros',
     component: LivroHeadAllComponent
+  },
+  {
+    path: 'categorias/:id_cat/livros/create',
+    component: LivroCreateComponent
   }
 ];
 

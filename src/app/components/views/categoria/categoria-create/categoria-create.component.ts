@@ -15,14 +15,14 @@ export class CategoriaCreateComponent implements OnInit {
     descricao: ''
   }
 
-  constructor(private service: CategoriaService, private roouter: Router) { }
+  constructor(private service: CategoriaService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   create(): void {
     this.service.create(this.categoria).subscribe((resposta) => {
-      this.roouter.navigate(['categorias'])
+      this.router.navigate(['categorias'])
       this.service.mensagem('Categoria criada com sucesso!')
     }, err => {
       for(let i = 0; i < err.error.erros.length; i ++){
@@ -32,7 +32,7 @@ export class CategoriaCreateComponent implements OnInit {
   }
 
   cancel(): void {
-    this.roouter.navigate(['categorias'])
+    this.router.navigate(['categorias'])
   }
 
 }

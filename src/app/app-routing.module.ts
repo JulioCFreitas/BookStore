@@ -1,3 +1,4 @@
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaHeadComponent } from './components/views/categoria/categoria-head/categoria-head.component';
 import { HomeComponent } from './components/views/home/home.component';
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'categorias/delete/:id',
     component: CategoriaDeleteComponent
+  },
+  {
+    path: 'categorias/update/:id',
+    component: CategoriaUpdateComponent
   }
 ];
 

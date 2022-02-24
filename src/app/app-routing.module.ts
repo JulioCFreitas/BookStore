@@ -1,3 +1,4 @@
+import { LivroHeadAllComponent } from './components/views/livro/livro-head-all/livro-head-all.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaHeadComponent } from './components/views/categoria/categoria-head/categoria-head.component';
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'categorias/update/:id',
     component: CategoriaUpdateComponent
+  },
+  {
+    path: 'categorias/:id_cat/livros',
+    component: LivroHeadAllComponent
   }
 ];
 

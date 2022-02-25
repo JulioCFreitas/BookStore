@@ -5,6 +5,7 @@ import { Livro } from './livro.model';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -32,6 +33,11 @@ export class LivroService {
   update(livro: Livro): Observable<Livro> {
     const url = `${this.baseUrl}/livros/${livro.id}`
     return this.http.put<Livro>(url, livro)
+  }
+
+  delete(id: String): Observable<void> {
+    const url = `${this.baseUrl}/livros/${id}`
+    return this.http.delete<void>(url)
   }
 
   mensagem(str: String): void{

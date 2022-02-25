@@ -28,9 +28,10 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import { LivroHeadAllComponent } from './components/views/livro/livro-head-all/livro-head-all.component';
 import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
 import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CategoriaHeadComponent, CategoriaCreateComponent, CategoriaDeleteComponent, CategoriaUpdateComponent, LivroHeadAllComponent, LivroCreateComponent, LivroUpdateComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CategoriaHeadComponent, CategoriaCreateComponent, CategoriaDeleteComponent, CategoriaUpdateComponent, LivroHeadAllComponent, LivroCreateComponent, LivroUpdateComponent, LivroDeleteComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
